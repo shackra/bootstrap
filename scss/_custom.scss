@@ -2,3 +2,18 @@
 //
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
+@import 'https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700,700i|Oswald:700|Permanent+Marker&subset=latin-ext';
+@import 'https://fontlibrary.org/face/monoid';
+@import "keys";
+@import "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/kimbie.dark.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css";
+article {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+p {
+    del {
+        color: #818a91 !important;
+    }
+}

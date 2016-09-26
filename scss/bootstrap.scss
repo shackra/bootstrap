@@ -9,11 +9,9 @@
 @import "custom";
 @import "variables";
 @import "mixins";
-
 // Reset and dependencies
 @import "normalize";
 @import "print";
-
 // Core CSS
 @import "reboot";
 @import "type";
@@ -23,7 +21,6 @@
 @import "tables";
 @import "forms";
 @import "buttons";
-
 // Components
 @import "animation";
 @import "dropdown";
@@ -43,12 +40,14 @@
 @import "list-group";
 @import "responsive-embed";
 @import "close";
-
+@import "footer";
+@import "figure";
+@import "header";
+@import "adorno";
 // Components w/ JavaScript
 @import "modal";
 @import "tooltip";
 @import "popover";
 @import "carousel";
-
 // Utility classes
 @import "utilities";

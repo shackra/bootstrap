@@ -1,0 +1,14 @@
+.adorno-inicio:before {
+    content: $adorno-symbol + " ";
+}
+
+.adorno-fin:after {
+    content: " " + $adorno-symbol;
+}
+
+.adorno {
+    &:after,
+    &:before {
+        content: " " + $adorno-symbol + " ";
+    }
+}

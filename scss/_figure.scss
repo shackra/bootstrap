@@ -1,0 +1,48 @@
+.figure {
+    display: block;
+    font-size: 0.8rem;
+    color: #544e4e;
+    margin: 2rem auto 2rem auto;
+    @include media-breakpoint-down(md) {
+        margin-bottom: 0.9rem;
+    }
+    text-align: center;
+    max-width: map-get($grid-breakpoints, md);
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+    p:last-child {
+        padding-bottom: 1em;
+        @include media-breakpoint-up(md) {
+            max-width: 100%;
+        }
+        margin: 0 auto;
+    }
+    .figure-number {
+        display: none;
+    }
+}
+
+article {
+    > div > h1 {
+        margin-bottom: 2rem;
+    }
+}
+
+article {
+    > div > h1 + .figure {
+        margin-top: 0;
+        @include media-breakpoint-up(lg) {
+            margin: 0 0 1.5rem 2rem;
+            float: right;
+            max-width: map-get($grid-breakpoints, sm);
+            img {
+                margin-top: 0;
+            }
+            p:last-child {
+                padding: 0;
+            }
+        }
+    }
+}

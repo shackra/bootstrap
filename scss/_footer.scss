@@ -1,0 +1,58 @@
+body {
+    @extend body;
+    @include media-breakpoint-up(md) {
+        margin-bottom: $footer-spacer-max;
+    }
+}
+
+// pie de pagina
+footer {
+    background-color: $footer-background;
+    color: $footer-foreground;
+    font-size: 0.7rem;
+    position: absolute;
+    padding-top: 2.5em;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: $footer-spacer-min;
+    @include media-breakpoint-up(md) {
+        height: $footer-spacer-max;
+    }
+    img {
+        margin: 1em 0;
+    }
+    a {
+        color: $footer-link;
+    }
+    @each $breakpoint in map-keys($grid-breakpoints) {
+        @for $i from 1 through 12 {
+            .col-#{$breakpoint}-#{i} {
+                @extend .col-#{$breakpoint}-#{i};
+                margin: 0.5em 0;
+                @include media-breakpoint-up(md) {
+                    margin: 0.2em 0;
+                }
+                .no-margen {
+                    margin: 1em 0 0 0;
+                }
+            }
+        }
+    }
+}
+
+.post-meta {
+    background: #cc8400;
+    padding: 1em;
+}
+
+.post-info {
+    color: #ffffff;
+    a:before {
+        content: "\f02b\0020";
+    }
+}
+
+.post-meta a {
+    color: #ffffff;
+}

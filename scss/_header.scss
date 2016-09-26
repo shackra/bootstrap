@@ -1,0 +1,57 @@
+header {
+    a {
+        color: $body-bg;
+        &:hover {
+            color: $body-bg;
+            text-decoration: none;
+        }
+    }
+    &:first-child {
+        background: $yellow;
+        color: $body-bg;
+        text-align: center;
+        padding-top: 1rem;
+    }
+    & > .container-fluid + .container-fluid {
+        background: $yellow-meta;
+        text-align: center;
+        h2 {
+            color: $body-bg;
+            font-family: $font-family-serif;
+            font-size: 1.2rem;
+            font-style: italic;
+            padding-top: 0.5rem;
+            b {
+                font-size: 0.9rem;
+                font-style: normal;
+            }
+        }
+    }
+    h1 {
+        font-family: 'Permanent Marker', cursive;
+        text-transformation: uppercase;
+        font-size: 3rem;
+        border: 5px solid $body-bg;
+        padding: 0.5rem;
+        @include media-breakpoint-up(sm) {
+            width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include media-breakpoint-down(sm) {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 2.4rem;
+        }
+    }
+    h3 {
+        font-family: $font-family-serif;
+        font-size: 1.2rem;
+        font-style: normal;
+        margin-bottom: 1.2rem;
+        @include media-breakpoint-down(sm) {
+            font-size: 0.7rem;
+        }
+    }
+}
